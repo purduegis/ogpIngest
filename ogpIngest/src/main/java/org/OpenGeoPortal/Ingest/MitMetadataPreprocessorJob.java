@@ -101,7 +101,7 @@ public class MitMetadataPreprocessorJob implements MetadataPreprocessorJob, Runn
 						e.printStackTrace();
 						String cause = "";
 						if (e.getCause() == null){
-							cause = "Unspecified error";
+							cause = "MIT: 104: Unspecified error";
 						} else {
 							cause = e.getCause().getClass().getName() + ":" + e.getMessage();
 						}
@@ -121,7 +121,7 @@ public class MitMetadataPreprocessorJob implements MetadataPreprocessorJob, Runn
 					e.printStackTrace();
 					String cause = "";
 					if (e.getCause() == null){
-						cause = "Unspecified error";
+						cause = "MIT: 124: Unspecified error";
 					} else {
 						cause = e.getCause().getClass().getName() + ":" + e.getMessage();
 					}
@@ -163,7 +163,7 @@ public class MitMetadataPreprocessorJob implements MetadataPreprocessorJob, Runn
 								logger.error("Failed to parse '" + xmlFile.getName() + "'");
 								String cause = "";
 								if (e.getCause() == null){
-									cause = "Unspecified error";
+									cause = "MIT: 166: Unspecified error";
 								} else {
 									cause = e.getCause().getClass().getName() + ":" + e.getMessage();
 								}
@@ -183,7 +183,7 @@ public class MitMetadataPreprocessorJob implements MetadataPreprocessorJob, Runn
 							logger.error("Failed to audit '" + xmlFile.getName() + "'");
 							String cause = "";
 							if (e.getCause() == null){
-								cause = "Unspecified error";
+								cause = "MIT:186: Unspecified error";
 							} else {
 								cause = e.getCause().getClass().getName() + ":" + e.getMessage();
 							}

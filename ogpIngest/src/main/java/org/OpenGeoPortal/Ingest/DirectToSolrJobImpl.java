@@ -46,7 +46,7 @@ public class DirectToSolrJobImpl implements DirectToSolrJob, Runnable {
 					String cause = "";
 					if (e.getCause() == null){
 						if (e.getMessage() == null){
-							cause = "Unspecified error";
+							cause = "Direct: 49: Unspecified error";
 						} else {
 							cause = e.getMessage();
 						}

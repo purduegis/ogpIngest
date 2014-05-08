@@ -92,7 +92,7 @@ public class BasicUploadMetadataJob implements UploadMetadataJob, Runnable {
 					String cause = "";
 					if (e.getCause() == null){
 						if (e.getMessage() == null){
-							cause = "Unspecified error";
+							cause = "Basic: 95: Unspecified error";
 						} else {
 							cause = e.getMessage();
 						}
@@ -132,7 +132,7 @@ public class BasicUploadMetadataJob implements UploadMetadataJob, Runnable {
 							String cause = "";
 							if (e.getCause() == null){
 								if (e.getMessage() == null){
-									cause = "Unspecified error";
+									cause = "Basic: 135: Unspecified error";
 								} else {
 									cause = e.getMessage();
 								}
